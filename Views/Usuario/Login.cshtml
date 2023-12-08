@@ -19,10 +19,11 @@
             <label asp-for="Senha"></label>
             <input asp-for="Senha" type="password" />
             <span asp-validation-for="Senha"></span>
+            <br />
+            <h4>@ViewBag.Mensagem</h4>
+            <br />
         </div>
-        <br />
-        <h4>@ViewBag.Mensagem</h4>
-        <br />
+        
         <div class="boti">
             <input type="submit" value="Entrar" />
         </div>
