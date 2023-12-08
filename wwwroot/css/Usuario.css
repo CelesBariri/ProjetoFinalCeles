@@ -1,0 +1,51 @@
+﻿.Caixa {
+    width: 35%;
+    height: 70%;
+    background-color: black;
+    margin-left: 32%;
+    margin-top: 6%;
+    border-radius: 10px;
+    border: solid 3px black;
+    padding: 20px 0px 0px 0px;
+    color: white;
+    border: solid 5px #F55207;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.frase {
+    font-size: 20px;
+    margin-left: 135px;
+    margin-top: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+span {
+    margin-top: 50px;
+    color: white;
+}
+.botao {
+    margin-left: 115px;
+    margin-top: 40px;
+    border-radius: 5px
+}
+.boti,
+.bot {
+    margin-left: 115px;
+}
+input {
+    width: 300px;
+    height: 40px;
+    display: block;
+    border-radius: 5px
+}
+.boti input {
+    background-color: #F55207;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px
+}
+.img-login {
+    width: 130px !important;
+    height: 50px !important;
+}
+.img-login img{
+    width: 100%!important;
+}

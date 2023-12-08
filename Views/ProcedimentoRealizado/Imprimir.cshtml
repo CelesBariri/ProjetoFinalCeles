@@ -1,0 +1,69 @@
+﻿@model ProjetoFinalCeles.Models.ProcedimentoRealizado
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/imprimissao.css" />
+    <title>Laboratorio do Celes</title>
+</head>
+<body class="cor">
+    <main class="Lugar">
+        <header>
+            <img class="logo" src="~/img/Logo_moderna_rosa_e_branco_para_Esteticista-removebg-preview.png" alt="">
+            <h1 class="lab">Clínica de Procedimentos Estéticos</h1>
+        </header>
+        <div>
+            <span class="pac">Paciente:</span>
+            <span>@Html.DisplayFor(model => model.Cliente.ClienteNome)</span>
+            <div style="margin-top: 10px;">
+                <span class="pac">Sexo:</span>
+                <span>@Html.DisplayFor(model => model.Cliente.ClienteSexo)</span>
+                <span class="paci">Idade:</span>
+                <span>@Html.DisplayFor(model => model.Cliente.ClienteCpf)</span>
+                <span class="paci">Clinica:</span>
+                <span>RCGF</span>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="iza">
+                <span class="izale">@Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</span>
+                <div>
+                    <span class="soro">Dosagem no soro</span>
+                </div>
+
+            </div>
+            <div class="diahora">
+                <span>Data da coleta:</span>
+                <span>@Html.DisplayFor(model => model.DataRealizacao)</span>
+                <div>
+                    <span>Hora:</span>
+                    <span>@Html.DisplayFor(model => model.DataRealizacao)</span>
+                </div>
+            </div>
+        </div>
+        <hr class="linha">
+        <div>
+            <div style="display: flex; margin-top: -10px;">
+                <h3>Resultado:</h3>
+                <h3 style="color: red; margin-left: 5px;">@Html.DisplayFor(model => model.ObservacaoRealizacao)</h3>
+            </div>
+            <div class="info">
+                <span class="pac">Valores de Referencia:</span>
+                <div style="margin-top: 10px;">
+                    <span class="pac">Mulher:</span>
+                    <span class="number">0,7-1,3mg/dl</span>
+                    <span class="pac" style="margin-left: 10px;">Homem:</span>
+                    <span class="number">0,8-1,4mg/dl</span>
+                </div>
+            </div>
+        </div>
+        <hr class="linha">
+        <div>
+            <span class="met">Metodologia:</span>
+            <span>Jaffé automatizado</span>
+        </div>
+    </main>
+</body>

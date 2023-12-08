@@ -1,0 +1,31 @@
+﻿@model ProjetoFinalCeles.Models.Usuario
+@{
+    Layout = null;
+}
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/css/Usuario.css" rel="stylesheet" /><div class="Caixa">    
+   
+    <form asp-action="Login">
+        <div class="img-login">
+            <img src="~/img/Logo_moderna_rosa_e_branco_para_Esteticista__1_-removebg-preview.png" />            
+        </div>
+        <span class="frase">Faça Login e Acesse Sua Conta</span>
+        <div class="botao">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div style="margin-top:20px;" class="bot">
+            <label asp-for="Senha"></label>
+            <input asp-for="Senha" type="password" />
+            <span asp-validation-for="Senha"></span>
+        </div>
+        <br />
+        <h4>@ViewBag.Mensagem</h4>
+        <br />
+        <div class="boti">
+            <input type="submit" value="Entrar" />
+        </div>
+    </form>
+</div>
+
